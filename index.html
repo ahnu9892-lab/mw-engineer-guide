@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MW Engineer Guide</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0b3d91">
+</head>
+
+<body>
+  <header>
+    <h1>MW Engineer Guide</h1>
+    <p>Your offline reference for Microwave Transmission</p>
+  </header>
+
+  <main>
+    <section id="home-page">
+      <section class="welcome">
+        <h2>Welcome, Engineer</h2>
+        <p>Find microwave transmission information, field guidance, equipment details, and troubleshooting steps.</p>
+          </section>
+
+      <section class="search-box">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search a topic: RSL, XPIC, antenna..."
+        >
+      </section>
+
+      <section class="guide-sections">
+        <button class="guide-card favorite-card" id="show-favorites">
+  <span>⭐</span>
+  <h3>My Favorites</h3>
+  <p>Open your saved topics quickly.</p>
+</button>
+        <button class="guide-card" data-topic="basics">
+          <span>📡</span>
+          <h3>Microwave Basics</h3>
+          <p>Learn the important microwave concepts.</p>
+        </button>
+
+        <button class="guide-card" data-topic="bands">
+          <span>📶</span>
+          <h3>Frequency Bands</h3>
+          <p>7 GHz to 38 GHz guides and comparisons.</p>
+        </button>
+
+        <button class="guide-card" data-topic="equipment">
+          <span>🔧</span>
+          <h3>Equipment Guide</h3>
+          <p>IDU, ODU, antenna, RTN, and accessories.</p>
+        </button>
+
+        <button class="guide-card" data-topic="design">
+          <span>📐</span>
+          <h3>Link Design</h3>
+          <p>LOS, Fresnel zone, RSL, and fade margin.</p>
+        </button>
+
+        <button class="guide-card" data-topic="installation">
+          <span>🛠️</span>
+          <h3>Installation & Alignment</h3>
+          <p>Installation steps and antenna alignment.</p>
+        </button>
+
+        <button class="guide-card" data-topic="troubleshooting">
+          <span>⚠️</span>
+          <h3>Troubleshooting</h3>
+          <p>Find solutions for common link problems.</p>
+        </button>
+
+        <button class="guide-card" data-topic="survey">
+          <span>✅</span>
+          <h3>Site Survey & Safety</h3>
+          <p>Survey requirements and field safety checks.</p>
+        </button>
+
+        <button class="guide-card" data-topic="dictionary">
+          <span>📚</span>
+          <h3>Microwave Dictionary</h3>
+          <p>Important microwave terms from A to Z.</p>
+        </button>
+      </section>
+    </section>
+<section id="detail-page" class="hidden">
+  <button id="back-button">← Back to Home</button>
+  <button id="favorite-button">☆ Add to Favorites</button>
+
+  <div id="topic-content"></div>
+</section>
+  </main>
+
+  <footer>
+    <p>MW Engineer Guide • Version 1.0</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
