@@ -6,8 +6,8 @@
   <title>MW Engineer Guide</title>
   <link rel="stylesheet" href="style.css">
   <link rel="manifest" href="manifest.json">
-  <link rel="icon" href="icon.svg" type="image/svg+xml">
-<meta name="theme-color" content="#0b3d91">
+  <link rel="icon" href="mw-engineer-guide-icon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#0b3d91">
 </head>
 
 <body>
@@ -21,22 +21,19 @@
       <section class="welcome">
         <h2>Welcome, Engineer</h2>
         <p>Find microwave transmission information, field guidance, equipment details, and troubleshooting steps.</p>
-          </section>
+      </section>
 
       <section class="search-box">
-        <input
-          type="text"
-          id="search-input"
-          placeholder="Search a topic: RSL, XPIC, antenna..."
-        >
+        <input type="text" id="search-input" placeholder="Search a topic: RSL, XPIC, antenna...">
       </section>
 
       <section class="guide-sections">
         <button class="guide-card favorite-card" id="show-favorites">
-  <span>⭐</span>
-  <h3>My Favorites</h3>
-  <p>Open your saved topics quickly.</p>
-</button>
+          <span>⭐</span>
+          <h3>My Favorites</h3>
+          <p>Open your saved topics quickly.</p>
+        </button>
+
         <button class="guide-card" data-topic="basics">
           <span>📡</span>
           <h3>Microwave Basics</h3>
@@ -86,12 +83,12 @@
         </button>
       </section>
     </section>
-<section id="detail-page" class="hidden">
-  <button id="back-button">← Back to Home</button>
-  <button id="favorite-button">☆ Add to Favorites</button>
 
-  <div id="topic-content"></div>
-</section>
+    <section id="detail-page" class="hidden">
+      <button id="back-button">← Back to Home</button>
+      <button id="favorite-button">☆ Add to Favorites</button>
+      <div id="topic-content"></div>
+    </section>
   </main>
 
   <footer>
